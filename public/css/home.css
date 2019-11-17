@@ -1,0 +1,295 @@
+.home .card-image img
+
+{
+
+	border:1px solid #DDD;
+
+	max-height: 300px;
+
+}
+
+
+.home .cards .row .col
+
+{
+
+	padding: 0 1rem;
+
+}
+
+
+
+.home .cards
+
+{
+
+	width: 70%;
+
+}
+
+
+
+.home .card
+
+{
+
+	border-bottom: 1px solid #3F51B5;
+
+}
+
+
+
+.home .card .card-content
+
+{
+
+	padding: 10px;
+
+}
+
+
+
+main.home .slick-track
+
+{
+
+	display: flex;
+
+	align-items: center;
+
+}
+
+
+
+main.home .busqueda
+
+{
+
+    background-color: #32373E;
+
+}
+
+
+
+main.home .busqueda .input-field label
+
+{
+
+	top: -15%;
+
+}
+
+
+
+main.home .marcas
+
+{
+
+	background-color: #EEEEEE;
+
+}
+
+
+
+main.home .autoplay img
+
+{
+
+	filter: grayscale(100%);
+
+	margin: 0 auto;
+
+	max-height: 130px;
+
+	width: 100px;
+
+}
+
+
+
+main.home .autoplay img:hover
+
+{
+
+	filter: none;
+
+	transition: 0.5s;
+
+}
+
+
+
+main.home .autoplay
+
+{
+
+	height: 200px !important;
+
+}
+
+
+
+main.home .marcas
+
+{
+
+	padding-top: 50px;
+
+}
+
+
+
+main.home .marcas p
+
+{
+
+	padding: 30px 0;
+
+}
+
+
+
+main.home .autoplay
+
+{
+
+	 width: 90%;
+
+	 margin: 0 auto;
+
+}
+
+
+
+main.home .autoplay .slick-slider
+
+{
+
+	height: 200px;
+
+}
+
+
+
+main.home .autoplay .slick-initialized
+
+{
+
+	height: 200px;
+
+}
+
+
+
+main.home .container-50
+
+{
+
+	width: 50%;
+
+}
+
+
+
+main.home .slick-prev, .slick-next
+
+{
+
+	top: 25% !important;
+
+}
+
+
+
+@media only screen and (max-width: 600px) 
+
+{
+
+	main.home .container-50
+
+	{
+
+    	width: 90%;
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 767px) and (orientation: landscape) 
+
+{
+
+    main.home .container-50
+
+	{
+
+    	width: 80%;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+
+{
+
+    main.home .container-50
+
+	{
+
+    	width: 70%;
+
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1349px) and (orientation: landscape) 
+
+{
+
+    main.home .container-50
+
+	{
+
+    	width: 80%;
+    }
+
+}
+
+@media (min-width: 1350px) and (max-width: 1600px) and (orientation: landscape) 
+
+{
+
+    main.home .container-50
+
+	{
+
+    	width: 50%;
+    }
+
+    .home .card .card-content
+	{
+	padding: 10px 5px;
+	font-size: 14px;
+	}
+
+}
+
+@media (min-width: 993px) and (max-width: 1071px) and (orientation: landscape) 
+
+{
+
+    main.home .container-50
+
+	{
+
+    	width: 80%;
+		
+    }
+
+	.home .card .card-content
+	{
+	padding: 10px;
+	font-size: 16px;
+	}
+}

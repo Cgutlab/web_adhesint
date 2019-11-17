@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Auritor</title>
+	<link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset('css/materialize/materialize.min.css') }}" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+  <link rel="icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+<div style="font-family: 'Raleway';">
+@include('page.template.header')
+</div>
+<style type="text/css">
+  div{
+    
+  }
+</style>
+<div class="container" style="width: 100%;">
+  <div class="row">
+    <div class="offset-l3 col l9">
+      <div style="margin-left: 17px;">
+        <h6 style="font-family: 'Raleway'; color:#666666;">Ultimas Noticias</h6>
+        <h4 style="font-family: 'Raleway'; color:#393185; margin-top: 0px;"><b>Novedades</b></h4>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="offset-l1 col l8">
+      <div class="container" style="width: 100%;">
+          <ul class="flex-container">
+            @foreach($categorias as $categoria)
+              @foreach($novedades as $novedad)
+                @if($categoria->id == $novedad->id_categoria)
+
+                <li class="flex-item-nov">
+                  <div>
+                  <img src="{{asset('imagenes/novedades/'.$novedad->imagen)}}" class="clientes-box-img" style="height:50%; width: 100%;">
+                  </div>                  
+                  <div>
+                    <div>
+                      <div style="margin-top:5px; font-family: 'Raleway'; font-size: 14px; color: #434141;">
+                        {{$categoria->titulo}}
+                      </div>
+                      <hr style="margin-top: 0px; margin-bottom: 10px;">
+                      <div style="margin-bottom:12px; font-family: 'Raleway'; font-size: 20px; color: #393185; font-weight: bold;">
+                        {{$novedad->titulo}}
+                      </div>
+                      <div style="margin-bottom:25px; font-family: 'Raleway'; font-size: 13px; color: #858585;">
+                        {{$novedad->fecha}}
+                      </div>
+                      <div style="margin-bottom:25px; font-family: 'Raleway'; font-size: 17px; color: #3F3F3F;">
+                        {{$novedad->breve}}
+                      </div>
+                      <div style="margin-bottom:25px; font-family: 'Raleway'; font-size: 18px; color: #009FE1;">
+                        <a href="novedad/{{($novedad->id)}}">V&eacuter m&aacutes...</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                @endif
+              @endforeach
+            @endforeach
+          </ul>
+      </div>
+    </div>
+    <div class="col l3">
+      <div  style="margin-top: 5px;">
+        <nav style="background-color: white;">
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" placeholder="Buscar..." required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div>
+        <h5>CATEGOR&IacuteAS</h5>
+      </div>
+      <hr>
+      <div>
+        @foreach($categoriax2 as $categoriax)
+        <div>
+          <a href="{{($categoriax->id)}}">» {{($categoriax->titulo)}}</a>
+           
+        </div>
+        @endforeach
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+
+@include('page.template.footer')
+</body>
+</html>
+
+<script type="text/javascript" src="{{ asset('js/jquery/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/materialize/materialize.min.js') }}"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $('.dropdown-trigger').dropdown({
+    constrainWidth: false,
+    closeOnClick: false
+  });
+   });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>

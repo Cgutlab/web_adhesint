@@ -1,0 +1,54 @@
+main.pregunta .container
+{
+	width: 50%;
+}
+
+main.pregunta .collapsible
+{
+	margin-bottom: 15px;
+}
+
+main.pregunta .collapsible-header
+{
+	padding: 0.70rem !important;
+}
+
+main.pregunta .collapsible-body
+{
+	padding:0 1rem !important;
+}
+
+@media only screen and (max-width: 767px) 
+{
+
+    main.pregunta .container
+	{
+		width: 90%;
+	}
+
+	main.pregunta hgroup
+	{
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+
+	main.pregunta h3
+	{
+		font-size: 38px;
+	}
+
+	main.pregunta h2
+	{
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+{
+
+    main.pregunta .container
+	{
+		width: 70%;
+	}
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Auritor</title>
+</head>
+<body>
+	<link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset('css/materialize/materialize.min.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+  <link rel="icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+
+<div style="font-family: 'Raleway';">
+@include('page.template.header')
+</div>
+
+@if(count($errors) > 0)
+<div class="col s12 card-panel red lighten-4 black-text text-darken-4 center" style="margin-top: 0px;">
+		<ul>
+			@foreach($errors->all() as $error)
+				<li>{!!$error!!}</li>
+			@endforeach
+		</ul>
+	</div>
+@endif
+@if(session('success'))
+<div class="col s12 card-panel green lighten-4 green-text text-darken-4 center" style="margin-top: 0px;">
+	{{ session('success') }}
+</div>
+@endif
+
+<div class="container" style="width: 100%;">
+<div class="row">
+	<div class="col l12">
+	<div class="center">
+		<h4 style="font-family: 'Raleway'; color:#393185; margin-top: 0px;"><b>RECUPERAR CUENTA</b></h4>
+	</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col l12">
+		<div class="center">
+			{!!Form::open(['route'=>'cuenta_d', 'method'=>'POST'])!!}
+				<div class="row">
+				<br><br>
+					<div class="input-field col s12">
+						 {!!Form::label('Email')!!}<br>
+						{!!Form::text('email',null,['class'=>'validate', 'required'])!!}
+					</div><br><br>
+					<div align="center">
+					{!!Form::submit('crear', ['class'=>'waves-effect waves-light btn right'])!!}
+					</div>
+				</div><br><br><br><br>
+			{!!Form::close()!!} 
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+@include('page.template.footer')
+</body>
+</html>
+
+    <script type="text/javascript" src="{{ asset('js/jquery/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/materialize/materialize.min.js') }}"></script>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+  $('.dropdown-trigger').dropdown({
+    constrainWidth: false,
+    closeOnClick: false
+  });
+   });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>

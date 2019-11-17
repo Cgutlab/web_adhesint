@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Indra</title>
+
+</head>
+<body>
+	<link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset('css/materialize/materialize.min.css') }}" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+  <link rel="icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+
+  
+<div style="font-family: 'Raleway';">
+@include('page.template.header')
+</div>
+<div class="container" style="margin-bottom: 60px; margin-top: 40px;">
+	<div class="row">
+		<div class="col l7">
+			<h1 class="naranja mayus fs32">certificados</h1>
+			<div class="linea"></div>
+			<div style="color:#444444;">{!!$descarga->texto!!}</div>
+			<div class="bordes" style="margin-top: 100px; background-color: #EEEEEE; padding:30px 20px;">
+				<div style="display: inline-block;">
+					<div>{!!$descarga->subtitulo!!}</div>
+					<div>Ver Certificación</div>
+				</div>
+				<a href="{{$descarga->ruta}}" download="Certificado_iso_9001"><img style="float: right;" src="{{ asset('imagenes/icono/descarga.fw.png')}}"></a>
+			</div>
+		</div>
+		<div class="col l4 offset-l1">
+			<img class="responsive-img" src="{{'imagenes/descarga/'.$descarga->imagen}}" style="margin-top: 50px;">
+			<div style="height: 4px; width: 100%; background-color: #F68121; margin-top: 60px; margin-bottom: 20px;"></div>
+			<div class="fs26" style="color:#353535;">{!!$descarga->titulo!!}</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+@include('page.template.footer')
+
+
+    <script type="text/javascript" src="{{ asset('js/jquery/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/materialize/materialize.min.js') }}"></script>
+
+</body>
+</html>

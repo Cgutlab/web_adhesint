@@ -1,0 +1,23 @@
+body
+{
+	background-color: #34506E;
+}
+
+.login .btn a
+{
+	background-color: #34506E;
+}
+
+.login .container
+{
+	background-color: #FFF;
+	margin-top: 100px;
+	width: 40%;
+	padding: 20px;
+}
+
+.login .container img
+{
+	width: 30%;
+	margin: 10px 35%;
+}

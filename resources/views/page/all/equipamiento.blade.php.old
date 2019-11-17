@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Auritor</title>
+
+</head>
+<body>
+	<link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset('css/materialize/materialize.min.css') }}" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+  <link rel="icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ asset('imagenes/logos/logos__favicon.png') }}" type="image/x-icon">
+  
+<div style="font-family: 'Raleway';">
+@include('page.template.header')
+</div>
+<div class="container">
+    <h1 class="fs36 naranja mayus" style="margin:70px 0 0;">equipamiento</h1>
+    <div class="linea" style="margin-bottom: 50px; border-left:1px solid #CCC;"></div>
+    <div class="row">
+        @foreach($equipamientos as $equipamiento)
+            <div class="col l6" style="margin-bottom: 20px;">
+                <div class="mayus fs20" style="background-color:#434242; color:white; padding:10px 30px;">{{$equipamiento->titulo}}</div>
+                    <div style="background-color:#EEEEEE; border-bottom: 4px solid #F68121;">
+                        <div style="display: inline-block;">
+                            <img style="margin: 15px;" class="responsive-img" src="{{ asset('imagenes/equipamiento/'.$equipamiento->imagen)}}">
+                            <div style="float: right; padding-top: 10px;">{{$equipamiento->texto}}</div>
+                        </div>
+                    </div>
+            </div>
+        @endforeach
+    </div>
+</div>
+
+@include('page.template.footer')
+
+</body>
+</html>
+<script type="text/javascript" src="{{ asset('js/jquery/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/materialize/materialize.min.js') }}"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $('.dropdown-trigger').dropdown({
+    constrainWidth: false,
+    closeOnClick: false
+  });
+   });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>

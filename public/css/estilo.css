@@ -1,0 +1,536 @@
+.row
+
+{
+
+	margin-bottom: 0;
+
+	padding:0;
+
+}
+
+/* Fuentes */
+.fw3{font-weight: 300}
+.fw4{font-weight: 400}
+.fw5{font-weight: 500}
+.fw6{font-weight: 600}
+.fw7{font-weight: 700}
+.fw8{font-weight: 800}
+
+
+/* Colores de la Pagina */
+
+.azul
+
+{
+
+	color:#3F51B5;
+
+}
+
+
+
+.gris-oscuro
+
+{
+
+	color:#333333;
+
+}
+
+
+
+.amarillo
+
+{
+
+	color:#FFC200;
+
+}
+
+
+
+.blanco
+
+{
+
+	color:#FFFFFF;
+
+}
+
+
+
+.gris
+
+{
+
+	color:#595959;
+
+}
+
+.pad0{
+	padding: 0;
+}
+
+.left5{
+	padding-left: 5px;
+}
+
+.bg-azul
+
+{
+
+	background-color: #3F51B5;
+
+}
+
+
+
+.bg-gris
+
+{
+
+	background-color: #282828;
+
+}
+
+
+
+.bg-gris-claro
+
+{
+
+	background-color: #F5F5F5;
+
+}
+
+
+
+
+
+/* Fin de colores */
+.mb15{
+	margin-bottom: 15px;
+}
+
+
+.mayus
+
+{
+
+	text-transform: uppercase;	
+
+}
+
+
+
+.capitalize
+
+{
+
+	text-transform: capitalize;
+
+}
+
+
+
+.bold
+
+{
+
+	font-weight: bold!important;
+
+}
+
+
+
+.lighter
+
+{
+
+	font-weight: lighter!important;
+
+}
+
+
+
+.superior
+
+{
+
+	margin-top: 60px;
+
+}
+
+
+
+.inferior
+
+{
+
+	margin-bottom: 60px;
+
+}
+
+
+
+
+
+
+
+
+
+/* Tamaño Fuentes */
+
+
+
+.fs55
+
+{
+
+	font-size: 55px;
+
+}
+
+
+
+
+
+.fs38
+
+{
+
+	font-size: 38px;
+
+}
+
+
+
+.fs36
+
+{
+
+	font-size: 36px;
+
+}
+
+
+
+.fs35
+
+{
+
+	font-size: 35px;
+
+}
+
+
+
+.fs44
+
+{
+
+	font-size: 44px;
+
+}
+
+
+
+.fs33
+
+{
+
+	font-size: 33px;
+
+}
+
+
+
+.fs32
+
+{
+
+	font-size: 32px;
+
+}
+
+
+
+.fs30
+
+{
+
+	font-size: 30px;
+
+}
+
+
+
+.fs28
+
+{
+
+	font-size: 28px;
+
+}
+
+
+
+.fs26
+
+{
+
+	font-size: 26px;
+
+}
+
+
+
+.fs25
+
+{
+
+	font-size: 25px;
+
+}
+
+
+
+.fs22
+
+{
+
+	font-size: 22px;
+
+}
+
+
+
+.fs20
+
+{
+
+	font-size: 20px;
+
+}
+
+
+
+.fs19
+
+{
+
+	font-size: 19px;
+
+}
+
+
+
+.fs18
+
+{
+
+	font-size: 18px;
+
+}
+
+
+
+.fs17
+
+{
+
+	font-size: 17px;
+
+}
+
+
+
+.fs16
+
+{
+
+	font-size: 16px;
+
+}
+
+
+
+/* Fin Tamaño Fuentes */
+
+
+
+/* Margenes Predeterminados */
+
+
+
+.mb10
+
+{
+
+	margin-bottom: 10px;
+
+}
+
+
+
+.mb15
+
+{
+
+	margin-bottom: 15px;
+
+}
+
+
+
+.mb20
+
+{
+
+	margin-bottom: 20px;
+
+}
+
+
+
+.mb30
+
+{
+
+	margin-bottom: 30px;
+
+}
+
+
+
+.mb40
+
+{
+
+	margin-bottom: 40px;
+
+}
+
+
+
+.mb50
+
+{
+
+	margin-bottom: 50px;
+
+}
+
+
+
+.mb70
+
+{
+
+	margin-bottom: 70px;
+
+}
+
+
+
+.mb100
+
+{
+
+	margin-bottom: 100px;
+
+}
+
+
+
+.mt10
+
+{
+
+	margin-top: 10px;
+
+}
+
+
+
+.mt20
+
+{
+
+	margin-top: 20px;
+
+}
+
+
+
+.mt30
+
+{
+
+	margin-top: 30px;
+
+}
+
+
+
+.mt40
+
+{
+
+	margin-top: 40px;
+
+}
+
+
+
+.mt50
+
+{
+
+	margin-top: 50px;
+
+}
+
+
+
+.mt70
+
+{
+
+	margin-top: 70px;
+
+}
+
+
+
+.mt100
+
+{
+
+	margin-top: 100px;
+
+}
+
+
+
+/* Fin Margenes Predeterminados */
+
+
+
+.no-padding
+
+{
+
+	padding: 0;
+
+}
+
+
+
+.no-margin
+
+{
+
+	margin: 0;
+
+}
